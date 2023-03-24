@@ -1,0 +1,77 @@
+
+{% extends 'layout.html' %}
+{% block body %}
+
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-family: Calibri;
+  font-size:20px;
+}
+
+tr:nth-child {
+  background-color: #dddddd;
+}
+.hero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("hero.jpg");;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+</style>
+
+
+<h2><u>Scholarship List : </u></h2>
+
+<table>
+  <tr>
+    <th>Scholarship Name</th>
+    <th>About</th>
+    <th>Annual Amount</th>
+    <th>To Apply</th>
+  </tr>
+  <tr>
+    <td>Swami Vivekananda Merit Cum Means Scholarship	</td>
+    <td>Candidates from underrepresented groups who are enrolling in professional or technical programs are eligible for this grant.</td>
+    <td>60,000/-</td>
+    <td><a href="/form">Click_here</a></td>
+  </tr>
+  <tr>
+    <td>Talent Support Stipend</td>
+    <td>This scholarship is made possible by the support of the State Government, and thirty per cent of the available awards are set aside specifically for female students.</td>
+    <td>48,000/-</td>
+    <td><a href="/form">Click here</a></td>
+  </tr>
+  <tr>
+    <td>West Bengal Merit- cum- Means Scholarships</td>
+    <td>Candidates who are currently enrolled in vocational or professional training programs are eligible to apply for this award.</td>
+    <td>36,000/-</td>
+    <td><a href="/form">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Post-matric Scholarship</td>
+    <td>This scholarship program is open to applicants from students in the 11th grade all the way up to candidates pursuing a PhD.</td>
+    <td>24,000/-</td>
+    <td><a href="/form">Click here</a></td>
+  </tr>
+  <tr>
+    <td>Pre-matric Scholarship</td>
+    <td>This scholarship program accepts inclusive applications from students in classes 1 through 10.</td>
+    <td>14,400/-</td>
+    <td><a href="/form">Click here</a></td>
+  </tr>
+
+</table>
+
+{% endblock %}

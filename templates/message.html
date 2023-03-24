@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+}
+#customers table{
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #fff;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #fff;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #52C0B9;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<h2><u>Your Details Here:</u></h2>
+<h3>Registration For {{onestud.scholar_choice}} </h3>
+<hr width="60%" align="left">
+
+<table id="customers">
+  <tr>
+    <th>Parameters</th>
+    <th>Your Details</th>
+  </tr>
+  <tr>
+    <td>Student Name</td>
+    <td>{{onestud.stud_name}}</td>
+
+  </tr>
+  <tr>
+      <td>Age</td>
+      <td>{{onestud.stud_age}}</td>
+  </tr>
+  <tr>
+    <td>Gender</td>
+    <td>{{onestud.stud_gender}}</td>
+  </tr>
+   <tr>
+    <td>Father Name</td>
+    <td>{{onestud.father_name}}</td>
+  </tr>
+   <tr>
+    <td>Mother Name</td>
+    <td>{{onestud.mother_name}}</td>
+  </tr>
+
+    <tr>
+    <td>Permanent Address</td>
+    <td>{{onestud.permanent_addr}}</td>
+  </tr>
+  <tr>
+    <td>Phone Number</td>
+    <td>{{onestud.phone_no}}</td>
+  </tr>
+ <tr>
+    <td>Email </td>
+    <td>{{onestud.email_id}}</td>
+  </tr>
+
+</table>
+<hr width="60%" align="left">
+
+</body>
+</html>
+
+
+
+<!--
+    scholar_choice
+    stud_name
+    stud_age
+    stud_gender
+
+    father_name
+    mother_name
+    permanent_addr
+    phone_no
+    email_id
+
+    in_come
+    annual_inc_img
+    passport_img
+    course_name
+    str_eam
+    clg_name
+    last_ov_mks
+    sem_1_img
+    sem_2_img
+    #bank_name
+    b_Accountno
+    b_branch
+    b_ifsc
+    date
+    -->
